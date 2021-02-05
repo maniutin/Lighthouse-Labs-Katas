@@ -1,4 +1,4 @@
-const talkingCalendar = function (date) {
+const talkingCalendar = function(date) {
   let dateSplit = date.split("/");
   let month = "";
   let day = dateSplit[2];

@@ -1,6 +1,6 @@
-const makeCase = function (input, casingStyle) {
+const makeCase = function(input, casingStyle) {
   // camelCase
-  var camel = function (input) {
+  let camel = function(input) {
     let string = "";
     for (let i = 0; i < input.length; i++) {
       if (input[i] === " ") {
@@ -13,7 +13,7 @@ const makeCase = function (input, casingStyle) {
     return string;
   };
   // PascalCase
-  var pascal = function (input) {
+  let pascal = function(input) {
     let string = "";
     for (let i = 0; i < input.length; i++) {
       if (i === 0) {
@@ -28,7 +28,7 @@ const makeCase = function (input, casingStyle) {
     return string;
   };
   // snake_case
-  let snake = function (input) {
+  let snake = function(input) {
     let string = "";
     for (let i = 0; i < input.length; i++) {
       if (input[i] === " ") {
@@ -40,7 +40,7 @@ const makeCase = function (input, casingStyle) {
     return string;
   };
   // kebab-case
-  let kebab = function (input) {
+  let kebab = function(input) {
     let string = "";
     for (let i = 0; i < input.length; i++) {
       if (input[i] === " ") {
@@ -52,7 +52,7 @@ const makeCase = function (input, casingStyle) {
     return string;
   };
   // Title Case
-  let title = function (input) {
+  let title = function(input) {
     let string = "";
     for (let i = 0; i < input.length; i++) {
       if (i === 0) {
@@ -67,7 +67,7 @@ const makeCase = function (input, casingStyle) {
     return string;
   };
   // vOwEl cAsE
-  let vowel = function (input) {
+  let vowel = function(input) {
     let string = "";
     for (let i = 0; i < input.length; i++) {
       if (
@@ -85,7 +85,7 @@ const makeCase = function (input, casingStyle) {
     return string;
   };
   // CoNSoNaNT CaSe
-  let consonant = function (input) {
+  let consonant = function(input) {
     let string = "";
     for (let i = 0; i < input.length; i++) {
       if (
@@ -103,7 +103,7 @@ const makeCase = function (input, casingStyle) {
     return string;
   };
   // UPPERCASE
-  let upper = function (input) {
+  let upper = function(input) {
     let string = "";
     for (let i = 0; i < input.length; i++) {
       string = input.toUpperCase();
@@ -111,7 +111,7 @@ const makeCase = function (input, casingStyle) {
     return string;
   };
   // lowercase
-  let lower = function (input) {
+  let lower = function(input) {
     let string = "";
     for (let i = 0; i < input.length; i++) {
       string = input.toLowerCase();

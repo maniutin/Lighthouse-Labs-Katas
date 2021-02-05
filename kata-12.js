@@ -1,4 +1,4 @@
-const organizeInstructors = function (instructors) {
+const organizeInstructors = function(instructors) {
   let courses = {};
   for (const instructor of instructors) {
     if (!courses[instructor.course]) {

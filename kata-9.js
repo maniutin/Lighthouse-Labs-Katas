@@ -1,25 +1,25 @@
 const PI = 3.14159;
 
 // Sphere Volume
-const sphereVolume = function (radius) {
+const sphereVolume = function(radius) {
   return (4 / 3) * PI * Math.pow(radius, 3);
 };
 console.log(4186 < sphereVolume(10) && sphereVolume(10) < 4189);
 
 // Cone Volume
-const coneVolume = function (radius, height) {
+const coneVolume = function(radius, height) {
   return PI * Math.pow(radius, 2) * (height / 3);
 };
 console.log(45 < coneVolume(3, 5) && coneVolume(3, 5) < 49);
 
 // Prism Volume
-const prismVolume = function (height, width, depth) {
+const prismVolume = function(height, width, depth) {
   return width * depth * height;
 };
 console.log(prismVolume(3, 4, 5) === 60);
 
 // Total Volume
-const totalVolume = function (solids) {
+const totalVolume = function(solids) {
   let total = 0;
   for (const solid of solids) {
     if (solid.type === "sphere") {

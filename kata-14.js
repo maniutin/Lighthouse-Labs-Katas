@@ -1,4 +1,4 @@
-const urlDecode = function (text) {
+const urlDecode = function(text) {
   const noPercentText = text.replace(/%20/g, " ");
   const noAmpText = noPercentText.replace(/&/g, "=");
   const stringSplit = noAmpText.split("=");

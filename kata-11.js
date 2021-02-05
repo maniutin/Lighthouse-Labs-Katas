@@ -1,4 +1,4 @@
-const calculateChange = function (total, cash) {
+const calculateChange = function(total, cash) {
   let change = {};
 
   let changeAmount = cash - total;

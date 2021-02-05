@@ -1,4 +1,4 @@
-const squareCode = function (message) {
+const squareCode = function(message) {
   const lineLength = Math.ceil(Math.sqrt(message.replace(/ /g, "").length));
   let arrColumns = [];
   for (let i = 0; i < lineLength; i++) {
@@ -7,7 +7,7 @@ const squareCode = function (message) {
     );
   }
   let finalArr = [];
-  let arr = [1, 2, 3];
+  //let arr = [1, 2, 3];
   arrColumns.forEach((line, index) => {
     for (let i = 0; i < line.length; i++) {
       if (index === 0) {

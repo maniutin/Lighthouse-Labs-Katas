@@ -1,4 +1,4 @@
-const checkAir = function (samples, threshold) {
+const checkAir = function(samples, threshold) {
   let counter = 0;
   for (let i = 0; i < samples.length; i++) {
     if (samples[i] === "dirty") {
