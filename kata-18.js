@@ -1,7 +1,7 @@
 let answerArr = [];
 const randomNumber = Math.round(Math.random() * 10);
 
-function numberGuesser() {
+const numberGuesser = function() {
   let prompt = require("prompt-sync")();
   let answer = prompt("Guess a number: ");
 
@@ -31,5 +31,5 @@ function numberGuesser() {
       numberGuesser();
     }
   }
-}
+};
 console.log(numberGuesser());
